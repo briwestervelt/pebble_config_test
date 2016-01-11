@@ -9,7 +9,7 @@ function submitHandler(){
   $submitButton.on("click", function(){
     console.log("submitted");
 
-    var return_to = getQueryParam('return_to', 'pebble.js://close#');
+    var return_to = getQueryParam('return_to', 'pebblejs://close#');
     document.location = return_to + encodeURIComponent(JSON.stringify(getAndStoreConfigureData()));
   });
 }
